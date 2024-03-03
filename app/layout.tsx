@@ -7,6 +7,7 @@ import "./globals.css";
 import { BrowserToolbar } from "~/components/browser-toolbar";
 import { RouterEvents } from "~/components/router-events";
 import { Navbar } from "~/components/navbar";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "History",
@@ -30,7 +31,9 @@ export default function RootLayout({
             {children}
           </div>
         </div>
-        <RouterEvents />
+        <Suspense>
+          <RouterEvents />
+        </Suspense>
       </body>
     </html>
   );
