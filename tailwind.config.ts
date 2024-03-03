@@ -18,6 +18,19 @@ const config: Config = {
       colors: {
         yellow: "#FFC700",
       },
+      animation: {
+        "spin-once": "spin-once 1s cubic-bezier(.75, -0.36, .25, 1.36)",
+      },
+      keyframes: {
+        "spin-once": {
+          "0%, 100%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+      },
     },
   },
   plugins: [],
