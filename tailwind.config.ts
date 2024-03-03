@@ -19,6 +19,7 @@ const config: Config = {
         yellow: "#FFC700",
       },
       animation: {
+        spin: "spin 1.5s linear infinite",
         "spin-once": "spin-once 1s cubic-bezier(.75, -0.36, .25, 1.36)",
       },
       keyframes: {
