@@ -15,8 +15,8 @@ export const BrowserCurrentUrl = () => {
       ) : (
         <Warning className="w-3 h-3 mr-1.5 flex-none" />
       )}
-      <span>{url.hostname}</span>
-      <span className="min-w-0 truncate text-white/70">
+      <span className="min-w-0 truncate flex-shrink">{url.hostname}</span>
+      <span className="min-w-0 truncate flex-1 text-white/70">
         {url.host.includes(":") ? `:${url.port}` : ""}
         {history.currentEntry() === "/" ? "" : history.currentEntry()}
       </span>
